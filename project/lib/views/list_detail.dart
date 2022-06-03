@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:project/views/listview_1.dart';
+import 'package:project/views/AnimeData.dart';
 
 
 
-class List_Detail extends StatelessWidget{
-  final ListView_1 list;
-   List_Detail({Key? key,required this.list}): super(key: key);
+class AnimeDetail extends StatelessWidget{
+  final AnimeData data;
+
+   const AnimeDetail({Key? key,required this.data}): super(key: key);
   
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text(''),),
+      appBar: AppBar(title: Text(data.name),),
       body: Column(children: [
-       Image.network("image"),
-       const Text("name")
+       Image.network(data.Imageurl),
+       
      ],
      ),
     );

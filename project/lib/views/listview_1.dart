@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project/views/list_detail.dart';
 
+// ignore: camel_case_types
 class ListView_1 extends StatelessWidget {
    
    ListView_1({Key? key}) : super(key: key);
@@ -50,6 +52,9 @@ class ListView_1 extends StatelessWidget {
                 leading: CircleAvatar(
                   backgroundImage:Image.network(_anime[index]["image"]!).image ,
                   ),
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: ((context) => List_Detail(list:_anime[index],))));
+                  },
                 title: Text (_anime[index]["name"]!),
                 );
             })

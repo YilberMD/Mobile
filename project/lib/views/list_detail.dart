@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/views/AnimeData.dart';
+import 'package:project/views/animedata.dart';
 
 
 

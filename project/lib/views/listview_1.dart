@@ -1,7 +1,9 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:project/views/list_detail.dart';
 
-import 'AnimeData.dart';
+import 'animedata.dart';
 
 // ignore: camel_case_types
 class ListView_1 extends StatelessWidget {
@@ -59,7 +61,31 @@ class ListView_1 extends StatelessWidget {
                   backgroundImage: Image.network(url[index]!).image,                                 
                    ),
                   onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: ((context) => AnimeDetail(data:animedata[index],))));
+                      
+                      showDialog(context: context, builder: (context)=>AlertDialog(
+                      title: Text (animedata[index].name),
+                      content:const Text(" Mostrar Detalles"),
+                      actions: <Widget>[
+                        
+                        FlatButton(
+                          child: const Text('Ok'),
+                          onPressed: (){
+                             Navigator.of(context).pop('Ok');
+                          },
+                        ),
+                        FlatButton(
+                           child: const Text("Cancel"),
+                           onPressed: (){
+                             Navigator.of(context).pop('Cancel');                             
+                           },
+                        ),
+                      ],
+                     ),
+                    ).then((result){
+                      if (result=='Ok'){
+                        Navigator.of(context).push(MaterialPageRoute(builder: ((context) => AnimeDetail(data:animedata[index],))));
+                      }
+                    });
                   },
                 title: Text (animedata[index].name),
                 ));

@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 
-//factory Registers.fromJson(List<dynamic> json) => Registers(
-//registers: json.map((e) => Register.fromJson(e)).toList(),
-//);
 
 // ignore: camel_case_types
 class List_Fire extends StatelessWidget {  

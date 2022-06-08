@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "779641219791",
+    "project_id": "projectapp-66691",
+    "storage_bucket": "projectapp-66691.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779641219791:android:45aaac8356ebbe97a125ba",
+        "android_client_info": {
+          "package_name": "com.cariv.project.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779641219791-t45po711fgh38nn2j4mggp26c1epjj9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT6ibkREr0_NediZBA_uBjB-UdTAvscK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779641219791-t45po711fgh38nn2j4mggp26c1epjj9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

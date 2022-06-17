@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:project/views/listview_1.dart';
+import 'package:project/views/splash.dart';
 
 
 
@@ -27,10 +28,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Material App',
-        home: ListView_1()
+        home: Splash()
         );
 
         

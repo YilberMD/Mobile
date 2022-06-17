@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:project/views/listview_1.dart';
 import 'menu.dart';
 
 class Splash extends StatefulWidget {
@@ -24,7 +25,7 @@ class Home extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:const Color.fromARGB(255, 170, 138, 138),
+      backgroundColor:const Color.fromARGB(255, 168, 81, 214),
       body: Container(
         alignment: Alignment.center,
         child: Column(

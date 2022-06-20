@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:project/views/profile.dart';
 
 
 class Menu extends StatefulWidget {
@@ -18,7 +19,9 @@ class Menu extends StatefulWidget {
    
  static const List<Widget> _widgets =  <Widget>[
 
+ 
  Text('Home', style: _options,),
+ Profile(),
  Text('Services', style: _options,),
  Text('Settings', style: _options,),
  
@@ -35,7 +38,7 @@ class Menu extends StatefulWidget {
    Widget build(BuildContext context) {
      return Scaffold(
       appBar: AppBar(
-        backgroundColor:Colors.purple,
+        backgroundColor:Color.fromARGB(255, 70, 202, 246),
         title: const Text('Easy Store'),
       ),
        body: Center(
@@ -46,21 +49,26 @@ class Menu extends StatefulWidget {
             BottomNavigationBarItem(
               icon:  Icon(Icons.home), 
               label: 'home',
-              backgroundColor: Colors.red,
+              backgroundColor: Color.fromARGB(255, 109, 109, 239),
          ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.room_service ),
-              label: 'room service',
-              backgroundColor: Colors.green,         
+              icon: Icon(Icons.person ),
+              label: 'Profile',
+              backgroundColor: Color.fromARGB(255, 126, 104, 248),         
             ),
             BottomNavigationBarItem(
+              icon: Icon(Icons.list),
+              label: 'services',
+              backgroundColor: Colors.purple
+            ),
+             BottomNavigationBarItem(
               icon: Icon(Icons.settings),
               label: 'settings',
               backgroundColor: Colors.purple
             ),
          ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.deepPurple,
+          selectedItemColor: Color.fromARGB(255, 9, 9, 9),
           onTap: _onItemTapped,
          ),
      );

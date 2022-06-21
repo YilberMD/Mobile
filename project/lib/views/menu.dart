@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:project/views/profile.dart';
+import 'package:project/views/services.dart';
 
 
 class Menu extends StatefulWidget {
@@ -22,7 +23,7 @@ class Menu extends StatefulWidget {
  
  Text('Home', style: _options,),
  Profile(),
- Text('Services', style: _options,),
+Services(),
  Text('Settings', style: _options,),
  
  ];
@@ -68,7 +69,7 @@ class Menu extends StatefulWidget {
             ),
          ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Color.fromARGB(255, 9, 9, 9),
+          selectedItemColor: const Color.fromARGB(255, 9, 9, 9),
           onTap: _onItemTapped,
          ),
      );

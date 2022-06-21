@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:project/views/listview_1.dart';
 import 'menu.dart';
 
 class Splash extends StatefulWidget {

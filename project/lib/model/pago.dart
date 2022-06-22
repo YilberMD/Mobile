@@ -12,9 +12,5 @@ class Pago {
       giro: json['giro'],
     );
   }
-  /* @override
-  String toString() {
-    return 'Pago \nefectivo: $efectivo, \ncredito: $credito, \ngiro: $giro';
-  } */
-
+ 
 }

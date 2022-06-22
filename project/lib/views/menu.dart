@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project/views/list_fire.dart';
 import 'package:project/views/list_view.dart';
 import 'package:project/views/profile.dart';
 import 'package:project/views/services.dart';
@@ -23,11 +22,13 @@ class Menu extends StatefulWidget {
 
  
  
- 
- ListView3(),
+ Text('Home', style: _options,), 
  Profile(),
- Services(),
- ListFirebase(),
+ ListView3(),
+ Settings(),
+ 
+ 
+
  
  ];
  

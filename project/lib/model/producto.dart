@@ -20,20 +20,6 @@ class Producto {
 
   }
 
- /*  Map<String, dynamic> toJson()   {
-    final Map<String, dynamic> db = new Map<String, dynamic>();
-    db['nombre'] = this.nombre;
-    db['codigob']= this.codigob;
-    db['descripcion']= this.descripcion;
-    db['precio']= this.precio;
-    db['stock']= this.stock;
-    return db;
-  } */
 
- /*  @override
-  String toString() {
-    return 'Productos \nnombre: $nombre, \ncodigo: $codigob, \ndescripcion: $descripcion, \nprecion: $precio, \nstock: $stock';
-  } */
-      
       
       }

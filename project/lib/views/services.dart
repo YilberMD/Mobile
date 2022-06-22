@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 
 // ignore: camel_case_types
-class Services extends StatelessWidget {
+class Settings extends StatelessWidget {
    
-   const Services({Key? key}) : super(key: key);
+   const Settings({Key? key}) : super(key: key);
  
  
   static const List<Map<String, String>> games = [

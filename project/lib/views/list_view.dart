@@ -14,7 +14,7 @@ class _ListView3State extends State<ListView3> {
   Widget build(BuildContext context) {
     FirebaseConnection fireBaseConnection = FirebaseConnection();
     return Scaffold(
-      
+      resizeToAvoidBottomInset: false,
         body: DataProvider()
             .recorrerLista(context, fireBaseConnection.getRegisters()));
   }

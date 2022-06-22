@@ -13,15 +13,20 @@ class FirebaseConnection{
      return _database.ref('/Registros');
    }
   Future<List<Registros>?> getRegisters() async {
+     List<Registros> list = [];
+
     try {
       DatabaseReference _registros = instanceFirebase();
       DataSnapshot response = await _registros.get();
       final string = json.encode(response.value);
       final data = json.decode(string);
-      final registers = ResponseFirebase.fromJson(data);
-      return registers.registro;
+      data.forEach((key, element) {
+        Registros? obj = Registros.fromJson(element);
+        list.add(obj);        
+      });
+      return list;
     } catch (e) {
-      rethrow;
+      print(e);
     }
   }
   /* Future<ResponseFirebase>getRegisters() async {

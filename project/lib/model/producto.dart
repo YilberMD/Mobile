@@ -1,9 +1,9 @@
 class Producto {
   final String? nombre;
-  final String? codigob;
+  final int? codigob;
   final String? descripcion;
-  final String? precio;
-  final String? stock;
+  final int? precio;
+  final int? stock;
   
 
   Producto({this.nombre,this.codigob,this.descripcion,

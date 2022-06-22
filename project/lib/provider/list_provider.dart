@@ -46,7 +46,7 @@ void showDialogFirebase(BuildContext context, Registros registro) {
             Image(image: NetworkImage(registro.image!)),
             const SizedBox(height: 10.0),
             _getRow("Celular:  ", "${registro.celular}"),
-            _getRow("Licencia:  ", "${registro.dni}"),
+            _getRow("Dni:  ", "${registro.dni}"),
             const SizedBox(height: 10.0),
             _getCardProducto(registro.producto!),
             const SizedBox(height: 10.0),

@@ -23,10 +23,10 @@ final String? image;
   
   });
 
-factory Registros.fromJson(Map<String, dynamic> json ) {
+factory Registros.fromJson(Map<Object?, dynamic> json ) {
     return Registros(
-      pago:   json['pago'] != null ? Pago.fromJson(json['Pago']) : null,
-      producto: json['producto'] != null ? Producto.fromJson(json['Producto']) :null,
+      pago:   json['Pago'] != null ? Pago.fromJson(json['Pago']) : null,
+      producto: json['Producto'] != null ? Producto.fromJson(json['Producto']) : null,
       nombre: json['nombre'],
       apellido: json ['apellido'],
       dni: json ['dni'],

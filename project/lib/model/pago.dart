@@ -5,11 +5,16 @@ class Pago {
 
   Pago({ this.efectivo,this.credito,this.giro});
 
-  factory Pago.fromJson(Map<String, dynamic> json) {
+  factory Pago.fromJson(Map<Object?, dynamic> json) {
     return Pago(
       efectivo: json['efectivo'],
       credito: json['credito'],
       giro: json['giro'],
     );
   }
+  /* @override
+  String toString() {
+    return 'Pago \nefectivo: $efectivo, \ncredito: $credito, \ngiro: $giro';
+  } */
+
 }

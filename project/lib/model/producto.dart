@@ -9,7 +9,7 @@ class Producto {
   Producto({this.nombre,this.codigob,this.descripcion,
       this.precio,this.stock});
       
-  factory Producto.fromJson(Map<String, dynamic> json ){
+  factory Producto.fromJson(Map<Object?, dynamic> json ){
     return Producto(
       nombre:   json['nombre'],
       codigob:  json['codigob'],
@@ -20,7 +20,7 @@ class Producto {
 
   }
 
-  Map<String, dynamic> toJson()   {
+ /*  Map<String, dynamic> toJson()   {
     final Map<String, dynamic> db = new Map<String, dynamic>();
     db['nombre'] = this.nombre;
     db['codigob']= this.codigob;
@@ -28,8 +28,12 @@ class Producto {
     db['precio']= this.precio;
     db['stock']= this.stock;
     return db;
-  }
-      
+  } */
+
+ /*  @override
+  String toString() {
+    return 'Productos \nnombre: $nombre, \ncodigo: $codigob, \ndescripcion: $descripcion, \nprecion: $precio, \nstock: $stock';
+  } */
       
       
       }

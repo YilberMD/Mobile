@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/views/list_detail.dart';
 
-import 'animedata.dart';
 
 // ignore: camel_case_types
 class Services extends StatelessWidget {
@@ -150,7 +148,7 @@ class Services extends StatelessWidget {
           const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       itemCount: games.length,
       itemBuilder: (_, index) {
-        return CardCustom(games[0]);
+        return CardCustom(games[index]);
       },
     ));
   }
@@ -171,7 +169,9 @@ class CardCustom extends StatelessWidget {
         SizedBox(
           width: 370,
           height: 120,
-          child: Center(child: Text('Clean Card')),
+          child: Center(child: Text('games'),
+          
+          ),
         ),
       ),
     );

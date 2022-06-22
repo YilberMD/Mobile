@@ -1,5 +1,6 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:project/views/list_fire.dart';
+import 'package:project/views/list_view.dart';
 import 'package:project/views/profile.dart';
 import 'package:project/views/services.dart';
 
@@ -21,10 +22,11 @@ class Menu extends StatefulWidget {
  static const List<Widget> _widgets =  <Widget>[
 
  
- Text('Home', style: _options,),
+ 
  Profile(),
-Services(),
- Text('Settings', style: _options,),
+ ListView3(),
+ Services(),
+ ListFirebase(),
  
  ];
  
@@ -39,7 +41,7 @@ Services(),
    Widget build(BuildContext context) {
      return Scaffold(
       appBar: AppBar(
-        backgroundColor:Color.fromARGB(255, 70, 202, 246),
+        backgroundColor:const Color.fromARGB(255, 70, 202, 246),
         title: const Text('Easy Store'),
       ),
        body: Center(
@@ -60,12 +62,12 @@ Services(),
             BottomNavigationBarItem(
               icon: Icon(Icons.list),
               label: 'services',
-              backgroundColor: Colors.purple
+              backgroundColor: Color.fromARGB(255, 126, 104, 248),
             ),
              BottomNavigationBarItem(
               icon: Icon(Icons.settings),
               label: 'settings',
-              backgroundColor: Colors.purple
+              backgroundColor: Color.fromARGB(255, 126, 104, 248),
             ),
          ],
           currentIndex: _selectedIndex,

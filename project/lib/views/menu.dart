@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/views/list_view.dart';
 import 'package:project/views/profile.dart';
-import 'package:project/views/services.dart';
+import 'package:project/views/settings.dart';
 
 
 class Menu extends StatefulWidget {

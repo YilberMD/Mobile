@@ -11,13 +11,6 @@ await Firebase.initializeApp();
 runApp(const MyApp());
 }
 
-/* void callDataBase() {
-  DatabaseReference reference = FirebaseDatabase.instance.ref('/Registros');
-  reference.onValue.listen((event) {
-    final data = event.snapshot.value;
-    print(data.toString()); 
-  });  
-} */
 
 
 

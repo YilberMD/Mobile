@@ -80,7 +80,7 @@ Column _getCardProducto(Producto producto) {
     children: <Widget>[
       const Text("Producto",
           style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold)),
-      _getRow("Nombre:  ", "$producto.nombre}"),
+      _getRow("Nombre:  ", "${producto.nombre}"),
       _getRow("Codigo:  ", "${producto.codigob}"),
        _getRow("Descripcion:  ", "${producto.descripcion}"),
       _getRow("Precio:  ", "${producto.precio}"),

@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
 
 Imagen:
 
-![Screenshot_1656098955](https://user-images.githubusercontent.com/105758362/175655920-42e2ecb8-656e-4a7c-9f53-b9726b408d23.png)
+
 
 
 

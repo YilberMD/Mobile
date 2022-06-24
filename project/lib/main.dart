@@ -5,7 +5,6 @@ import 'package:project/views/splash.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-//callDataBase();
   runApp(const MyApp());
 }
 

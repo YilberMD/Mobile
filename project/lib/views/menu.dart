@@ -19,7 +19,7 @@ class _Menus extends State<Menu> {
   static const List<Widget> _widgets = <Widget>[
     List_Product(),
     Profile(),
-    ListView3(),
+    List_View(),
     Galeria(),
   ];
 

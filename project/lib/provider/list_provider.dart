@@ -13,6 +13,7 @@ class ListProvider {
         return Column(
           children: [
             ListTile(
+              
               title: Text(
                 data[index].nombre!,
               ),
@@ -21,6 +22,8 @@ class ListProvider {
               ),
               leading: CircleAvatar(
                   backgroundImage: NetworkImage(data[index].image!)),
+                  
+                  
               onTap: () {
                 Navigator.push(
                     context,

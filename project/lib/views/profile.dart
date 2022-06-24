@@ -42,8 +42,8 @@ class Profile extends StatelessWidget {
         color: Colors.grey,
         width: double.infinity,
         height: coverHeight,
-        child: Image.network(
-            'https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg'),
+        child: Image.asset(
+            'assets/animations/profile.jpeg'),
       );
   Widget buildProfileImage() => CircleAvatar(
         radius: profileHeight / 2,
@@ -53,6 +53,7 @@ class Profile extends StatelessWidget {
       );
 
   Widget buildContent() => Column(
+        
         children: [
           const SizedBox(height: 8),
           const Text('Yilbert Molina',
@@ -61,6 +62,10 @@ class Profile extends StatelessWidget {
           const Text(
             'System Enginner',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          const Text(
+            'Celular :3046725884',
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
           Row(

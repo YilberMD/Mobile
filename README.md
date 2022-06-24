@@ -6,17 +6,24 @@ Descripcion: Aplicacion Mobile Flutter basada en ofrecer productos a la venta , 
 conexion Realtime Database Firebase, se implementaron ListView,Iconos Lottie,Splash e Iconos y NavigationButton.
 cabe recordar la aplicacion se realizo con fines educativos 
 
+
+
 Cómo utilizar
 Paso 1:
 
 Descargue o clone este repositorio usando el siguiente enlace:
 
-https://github.com/zubairehman/flutter-boilerplate-project.git
-Paso 2:
+https://github.com/YilberMD/mobile.git
 
+
+
+
+Paso 2:
 Vaya a la raíz del proyecto y ejecute el siguiente comando en la consola para obtener las dependencias requeridas:
 
 flutter pub get 
+
+
 
 
 

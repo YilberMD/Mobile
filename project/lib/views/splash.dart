@@ -23,7 +23,7 @@ class Home extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:const Color.fromARGB(255, 168, 81, 214),
+      backgroundColor: const Color.fromARGB(255, 168, 81, 214),
       body: Container(
         alignment: Alignment.center,
         child: Column(
@@ -33,7 +33,8 @@ class Home extends State<Splash> {
             SizedBox(
                 height: 300,
                 width: 300,
-                child: Lottie.asset('assets/animations/service-animation.json')),
+                child:
+                    Lottie.asset('assets/animations/service-animation.json')),
             const SizedBox(height: 20),
             const Text(
               "Easy Store",

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:project/model/pago.dart';
 import 'package:project/model/producto.dart';
 
-class DetailView extends StatelessWidget {
+class DetailView_User extends StatelessWidget {
   final registro;
-  const DetailView({Key? key, required this.registro}) : super(key: key);
+  const DetailView_User({Key? key, required this.registro}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class DetailView extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
-                              image: NetworkImage(registro.producto.image!),
+                              image: NetworkImage(registro.image!),
                               fit: BoxFit.cover),
                         ),
                       ),

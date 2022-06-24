@@ -14,7 +14,7 @@ class _ListView3State extends State<ListView3> {
   Widget build(BuildContext context) {
     FirebaseConnection fireBaseConnection = FirebaseConnection();
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+        resizeToAvoidBottomInset: false,
         body: DataProvider()
             .recorrerLista(context, fireBaseConnection.getRegisters()));
   }
@@ -32,9 +32,8 @@ class _List_ViewState extends State<List_Product> {
   Widget build(BuildContext context) {
     FirebaseConnection fireBaseConnection = FirebaseConnection();
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+        resizeToAvoidBottomInset: false,
         body: DataProviderProduct()
             .recorrerListaProduct(context, fireBaseConnection.getRegisters()));
   }
 }
-

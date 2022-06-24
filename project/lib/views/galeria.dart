@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 
-
 // ignore: camel_case_types
 class Galeria extends StatelessWidget {
-   
-   const Galeria({Key? key}) : super(key: key);
- 
- 
+  const Galeria({Key? key}) : super(key: key);
+
   static const List<Map<String, String>> games = [
     {
       "image":
@@ -38,28 +35,25 @@ class Galeria extends StatelessWidget {
           "https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/09/02/6130d99519f60.png",
       "name": "Roblox"
     },
-    
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView.builder(  
-          scrollDirection: Axis.vertical,
-      shrinkWrap: true,       
+        body: ListView.builder(
+      scrollDirection: Axis.vertical,
+      shrinkWrap: true,
       itemCount: games.length,
       itemBuilder: (_, index) {
-       
         return miCardImage(index);
-      
       },
     ));
   }
-  
+
   miCardImage(index) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      margin:const EdgeInsets.all(15),
+      margin: const EdgeInsets.all(15),
       elevation: 10,
       child: Column(
         children: <Widget>[
@@ -75,8 +69,3 @@ class Galeria extends StatelessWidget {
     );
   }
 }
-
-
-
-
-

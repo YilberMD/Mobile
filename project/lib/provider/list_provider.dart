@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../views/detail_view.dart';
+import 'package:project/views/detail_user.dart';
+
 
 class ListProvider {
   static Widget showList(List<dynamic> data, BuildContext context) {
@@ -21,7 +22,12 @@ class ListProvider {
               leading: CircleAvatar(
                   backgroundImage: NetworkImage(data[index].image!)),
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailView(registro:data[index],)));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => DetailView_User(
+                              registro: data[index],
+                            )));
               },
               trailing: const Icon(Icons.keyboard_arrow_right),
             )
@@ -30,5 +36,4 @@ class ListProvider {
       },
     );
   }
-  
 }

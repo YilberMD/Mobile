@@ -12,6 +12,11 @@ class FirebaseConnection{
    DatabaseReference instanceFirebase(){
      return _database.ref('/Registros');
    }
+   
+
+
+
+
   Future<List<Registros>?> getRegisters() async {
      List<Registros> list = [];
 
@@ -30,16 +35,5 @@ class FirebaseConnection{
     }
   }
 
- Future<Registros> getRegister(id) async {
-    try {
-      DatabaseReference _registros = instanceFirebase();
-      DataSnapshot response = await _registros.child('/$id').get();
-      final string = json.encode(response.value);
-      final data = json.decode(string);
-      final registers = Registros.fromJson(data);
-      return registers;
-    } catch (e) {
-      rethrow;
-    }
-  }
+ 
 }

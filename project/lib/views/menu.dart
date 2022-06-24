@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/views/list_view.dart';
 import 'package:project/views/profile.dart';
-import 'package:project/views/settings.dart';
+import 'package:project/views/galeria.dart';
 
 
 class Menu extends StatefulWidget {
@@ -20,16 +20,10 @@ class Menu extends StatefulWidget {
    
  static const List<Widget> _widgets =  <Widget>[
 
- 
- 
- Text('Home', style: _options,), 
+ List_Product(),
  Profile(),
  ListView3(),
- Settings(),
- 
- 
-
- 
+ Galeria(),
  ];
  
  
@@ -43,7 +37,7 @@ class Menu extends StatefulWidget {
    Widget build(BuildContext context) {
      return Scaffold(
       appBar: AppBar(
-        backgroundColor:const Color.fromARGB(255, 70, 202, 246),
+        backgroundColor:const Color.fromARGB(255, 168, 81, 214),
         title: const Text('Easy Store'),
       ),
        body: Center(
@@ -53,23 +47,23 @@ class Menu extends StatefulWidget {
           items:const  <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon:  Icon(Icons.home), 
-              label: 'home',
-              backgroundColor: Color.fromARGB(255, 109, 109, 239),
+              label: 'Productos',
+              backgroundColor:  Color.fromARGB(255, 168, 81, 214),
          ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person ),
               label: 'Profile',
-              backgroundColor: Color.fromARGB(255, 126, 104, 248),         
+              backgroundColor:  Color.fromARGB(255, 168, 81, 214),         
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.list),
-              label: 'services',
-              backgroundColor: Color.fromARGB(255, 126, 104, 248),
+              label: 'Users',
+              backgroundColor: Color.fromARGB(255, 168, 81, 214),
             ),
              BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: 'settings',
-              backgroundColor: Color.fromARGB(255, 126, 104, 248),
+              icon: Icon(Icons.photo),
+              label: 'Galery',
+              backgroundColor: Color.fromARGB(255, 168, 81, 214),
             ),
          ],
           currentIndex: _selectedIndex,

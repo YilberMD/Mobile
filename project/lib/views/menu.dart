@@ -43,7 +43,7 @@ class _Menus extends State<Menu> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Productos',
+            label: 'Home',
             backgroundColor: Color.fromARGB(255, 168, 81, 214),
           ),
           BottomNavigationBarItem(
